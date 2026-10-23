@@ -2,7 +2,7 @@
 
 Code, result files and paper source for the study of whether a linear probe for harmful requests, trained on a base language model, still works on that base model's successors (the DeepSeek-R1 distilled model and the developer's instruction-tuned model), in four model families: Qwen2.5-Math-7B, Llama-3.1-8B, Qwen2.5-14B and Qwen2.5-32B.
 
-Author: Marios Tsatsos (independent researcher). Preprint: arXiv (link to be added).
+Author: Marios Tsatsos (independent researcher).
 
 ## Layout
 
