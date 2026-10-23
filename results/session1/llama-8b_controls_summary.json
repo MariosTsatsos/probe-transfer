@@ -1,0 +1,8 @@
+{
+ "layer": 17,
+ "safety_cos_full": 0.8465,
+ "safety_ratio": 0.8509,
+ "split_ratio_median": 0.8834,
+ "n_splits_rotating_more": 0,
+ "n_splits": 35
+}

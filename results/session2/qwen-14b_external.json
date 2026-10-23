@@ -1,0 +1,158 @@
+{
+ "layer": 40,
+ "n": {
+  "hard": 1319,
+  "toxic": 655,
+  "alpaca": 500
+ },
+ "results": {
+  "own_base": {
+   "auc_hard_vs_toxic": 0.7023606826823466,
+   "auc_alpaca_vs_toxic": 0.9569709923664123,
+   "fpr_hard@0": 0.41925701288855194,
+   "fpr_alpaca@0": 0.032,
+   "tpr_toxic@0": 0.7038167938931298,
+   "fpr_hard@t90": 0.04624715693707354,
+   "fpr_alpaca@t90": 0.0,
+   "tpr_toxic@t90": 0.2198473282442748,
+   "auc_hard_vs_toxic_ci": [
+    0.6776425582647044,
+    0.7262045037589199
+   ],
+   "auc_alpaca_vs_toxic_ci": [
+    0.9457505343511452,
+    0.9667387022900763
+   ]
+  },
+  "own_distilled": {
+   "auc_hard_vs_toxic": 0.7239315002691143,
+   "auc_alpaca_vs_toxic": 0.9787541984732825,
+   "fpr_hard@0": 0.4761182714177407,
+   "fpr_alpaca@0": 0.004,
+   "tpr_toxic@0": 0.7740458015267175,
+   "fpr_hard@t90": 0.08718726307808947,
+   "fpr_alpaca@t90": 0.0,
+   "tpr_toxic@t90": 0.29923664122137406,
+   "auc_hard_vs_toxic_ci": [
+    0.7000377628205499,
+    0.7452455885501971
+   ],
+   "auc_alpaca_vs_toxic_ci": [
+    0.9717981679389313,
+    0.9849443511450382
+   ]
+  },
+  "own_instruct": {
+   "auc_hard_vs_toxic": 0.8148099705421062,
+   "auc_alpaca_vs_toxic": 0.9869984732824427,
+   "fpr_hard@0": 0.35178165276724793,
+   "fpr_alpaca@0": 0.002,
+   "tpr_toxic@0": 0.816793893129771,
+   "fpr_hard@t90": 0.04700530705079606,
+   "fpr_alpaca@t90": 0.0,
+   "tpr_toxic@t90": 0.3801526717557252,
+   "auc_hard_vs_toxic_ci": [
+    0.7941335675303405,
+    0.8333441654271975
+   ],
+   "auc_alpaca_vs_toxic_ci": [
+    0.9817061832061068,
+    0.9915848091603053
+   ]
+  },
+  "transfer_distilled": {
+   "auc_hard_vs_toxic": 0.7135072255757022,
+   "auc_alpaca_vs_toxic": 0.970036641221374,
+   "fpr_hard@0": 0.6808188021228203,
+   "fpr_alpaca@0": 0.066,
+   "tpr_toxic@0": 0.8961832061068702,
+   "fpr_hard@t90": 0.18043972706595907,
+   "fpr_alpaca@t90": 0.0,
+   "tpr_toxic@t90": 0.4717557251908397,
+   "auc_hard_vs_toxic_ci": [
+    0.6890279473809097,
+    0.7349225934521294
+   ],
+   "auc_alpaca_vs_toxic_ci": [
+    0.9615034351145039,
+    0.9779820610687024
+   ],
+   "diff_vs_base_auc_hard": 0.011146542893355593,
+   "diff_vs_base_auc_hard_ci": [
+    -0.0004871548536077352,
+    0.02226362789297928
+   ]
+  },
+  "transfer_instruct": {
+   "auc_hard_vs_toxic": 0.7555828206656674,
+   "auc_alpaca_vs_toxic": 0.9756458015267175,
+   "fpr_hard@0": 0.444275966641395,
+   "fpr_alpaca@0": 0.016,
+   "tpr_toxic@0": 0.7938931297709924,
+   "fpr_hard@t90": 0.05458680818802123,
+   "fpr_alpaca@t90": 0.0,
+   "tpr_toxic@t90": 0.31297709923664124,
+   "auc_hard_vs_toxic_ci": [
+    0.7319432660643906,
+    0.7771149783840408
+   ],
+   "auc_alpaca_vs_toxic_ci": [
+    0.9678116030534352,
+    0.9826683969465649
+   ],
+   "diff_vs_base_auc_hard": 0.05322213798332076,
+   "diff_vs_base_auc_hard_ci": [
+    0.04514413533268923,
+    0.06152055397044954
+   ]
+  },
+  "text_char35": {
+   "auc_hard_vs_toxic": 0.6400164362314731,
+   "auc_alpaca_vs_toxic": 0.8199328244274808,
+   "fpr_hard@0": 0.09704321455648218,
+   "fpr_alpaca@0": 0.05,
+   "tpr_toxic@0": 0.2687022900763359,
+   "fpr_hard@t90": 0.2896133434420015,
+   "fpr_alpaca@t90": 0.126,
+   "tpr_toxic@t90": 0.4854961832061069,
+   "auc_hard_vs_toxic_ci": [
+    0.6148245837408631,
+    0.6664398196644462
+   ],
+   "auc_alpaca_vs_toxic_ci": [
+    0.7959321374045801,
+    0.8436909923664122
+   ]
+  },
+  "text_word1": {
+   "auc_hard_vs_toxic": 0.6264947421421502,
+   "auc_alpaca_vs_toxic": 0.8428534351145037,
+   "fpr_hard@0": 0.31766489764973466,
+   "fpr_alpaca@0": 0.09,
+   "tpr_toxic@0": 0.47480916030534354,
+   "fpr_hard@t90": 0.5420773313115997,
+   "fpr_alpaca@t90": 0.172,
+   "tpr_toxic@t90": 0.7114503816793893,
+   "auc_hard_vs_toxic_ci": [
+    0.6011533286262436,
+    0.6504174455549832
+   ],
+   "auc_alpaca_vs_toxic_ci": [
+    0.8180965267175572,
+    0.8641545801526719
+   ]
+  }
+ },
+ "fpr_hard_by_category_base_t90": {
+  "deception": 0.027777777777777776,
+  "harassment": 0.0,
+  "harmful": 0.0,
+  "hate": 0.09259259259259259,
+  "illegal": 0.051233396584440226,
+  "privacy": 0.07537688442211055,
+  "self-harm": 0.047619047619047616,
+  "sexual": 0.015151515151515152,
+  "unethical": 0.04,
+  "violence": 0.045454545454545456
+ }
+}

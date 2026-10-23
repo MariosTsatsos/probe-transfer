@@ -1,0 +1,24 @@
+
+=== llama-8b base (meta-llama/Llama-3.1-8B), layer 17 ===
+safety_diffmeans     unsafe: [' myself', 'evin', 'ahu', 'ECT', 'scape', 'aat', 'amba', '配合', '.obtain', 'рун', 'abad', 'oldt', 'цю', 'ück', 'ties']
+                     safe:   ['elon', 'bern', 'bor', 'oucher', '936', 'aska', 'chk', ' unl', '&t', '__;', ' loosely', 'άντα', ' Crossing', '.bt', 'мерик']
+safety_probe         unsafe: ['848', 'ate', ' ok', '22', ' masked', 'ECT', 'eut', 'lected', 'auto', '849', 'sa', ' anonymous', 'sect', 'ugg', ' Storm']
+                     safe:   ['ạc', 'еся', 'ifar', 'omen', '中文', 'кас', 'atif', 'Monad', 'жі', 'laden', 'wand', '�', 'озя', 'aker', 'ốc']
+control_typesplit    unsafe: [' why', 'inar', 'cale', ' rest', ' count', ' because', 'why', 'pool', ' gio', 'atro', 'มข', 'iddles', 'meer', ' Count', ' WHY']
+                     safe:   ['Hints', 'ichten', ' strtok', 'amma', 'ivent', ' Enemies', 'oui', 'PID', 'indle', 'anni', 'estructor', 'icol', 'hiba', '.dispose', 'alama']
+control_how          unsafe: ['才能', 'evin', 'TRL', 'ottie', ' myself', '_OVERRIDE', 'unks', 'TestFixture', '既', ' fares', 'enties', 'EMU', 'ляв', 'Structured', 'allis']
+                     safe:   [' why', 'why', ' Reason', 'elon', 'rsp', '344', 'mj', '515', '느', ' ware', 'bon', ' hear', 'obel', '름', '_atual']
+control_length       unsafe: ['��', 'chu', 'Gro', '299', '.decorate', 'elon', ' �', 'oca', '.UnitTesting', '@qq', ' célib', ' жил', 'CKER', '員', '스코']
+                     safe:   [' Garland', ' p', ' down', 'си', ' Trib', ' circum', '既', ' function', 'iliz', ' best', ' mens', ' st', 'hiba', ' sm', ' further']
+
+=== llama-8b arm (deepseek-ai/DeepSeek-R1-Distill-Llama-8B), layer 17 ===
+safety_diffmeans     unsafe: ['evin', 'ее', '�', 'ultur', 'amate', '�', '.obtain', 'scape', '程', 'ulin', ' Dün', 'hur', 'рун', '룸', ' geil']
+                     safe:   ['ilo', '.uni', 'bor', 'aska', '杉', 'Та', 'chio', 'utch', 'ibel', 'instein', 'bout', '.gb', 'arel', 'etail', 'isma']
+safety_probe         unsafe: ['22', 'struct', ' ', 'croft', ' (', ' num', ' gain', ' Germ', 'ate', ' geil', 'раг', ' cassette', 'ity', ' Arena', ' masked']
+                     safe:   ['ạc', '�', 'opis', 'aths', 'ADATA', 'ột', 'еся', 'atak', 'ạn', 'getDb', 'bane', 'झ', 'yan', 'CodeAt', '�']
+control_typesplit    unsafe: ['inar', '_que', ' Werner', 'alon', 'unity', 'عاد', 'peg', ' act', 'buat', ' instead', 'statt', 'pool', 'etary', 'ogy', 'iddles']
+                     safe:   ['PID', 'oret', 'icol', 'olle', 'odega', 'ichten', 'Hints', 'ivent', 'віт', 'ouse', 'akest', 'FSIZE', 'aba', 'ť', 'hiba']
+control_how          unsafe: ['才能', 'enties', 'richt', 'URLConnection', 'üssen', 'pector', '咲', '�', 'alore', ' cân', ' Cena', 'TestFixture', 'TRL', 'ellar', 'andelier']
+                     safe:   ['šel', 'obel', ' hear', '.uni', '344', 'eday', '983', ' �', 'drv', ' Hearth', '834', ' hears', 'mj', ' Hen', 'WA']
+control_length       unsafe: ['ilename', 'ίτ', '.FontStyle', 'chu', 'ocoder', 'irth', 'utan', 'pler', '/../', ' typings', '855', 'anguage', ' �', 'chandle', 'ontent']
+                     safe:   [' circum', ' Demir', 'ee', '既', 'WhiteSpace', 'URLConnection', ' Leonard', '578', ' Garland', 'hiba', ' investors', 'ses', 'си', ' safely', 'GRADE']

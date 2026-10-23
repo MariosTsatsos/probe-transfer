@@ -1,0 +1,7 @@
+llama-8b: layer 17
+   direction  n_pos  n_neg  assoc_with_safety  cos_full  cos_cross  ci_lo  ci_hi  floor  ratio  rotation
+      safety    200    250              1.000    0.8465     0.6397 0.5756 0.6856 0.7518 0.8509    0.1121
+question_how    178    272              0.228    0.8584     0.7761 0.7496 0.7960 0.9012 0.8612    0.1250
+named_entity    138    312              0.197    0.8827     0.7614 0.7093 0.7940 0.8567 0.8887    0.0954
+ length_long    217    233              0.085    0.8445     0.7505 0.7025 0.7786 0.8876 0.8456    0.1371
+type splits (n=35): agreement (cross/floor) median 0.883, range 0.867 to 0.899; 0 of 35 rotate MORE than the safety direction (safety 0.851, cos_full 0.847)

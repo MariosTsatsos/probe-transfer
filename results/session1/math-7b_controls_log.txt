@@ -1,0 +1,7 @@
+math-7b: layer 18
+   direction  n_pos  n_neg  assoc_with_safety  cos_full  cos_cross  ci_lo  ci_hi  floor  ratio  rotation
+      safety    200    250              1.000    0.8260     0.6159 0.5267 0.6784 0.7288 0.8450    0.1129
+question_how    178    272              0.228    0.8370     0.7509 0.6969 0.7816 0.8903 0.8434    0.1394
+named_entity    138    312              0.197    0.8276     0.7027 0.6186 0.7493 0.8386 0.8380    0.1359
+ length_long    217    233              0.085    0.6548     0.6163 0.5893 0.6361 0.9410 0.6549    0.3247
+type splits (n=35): agreement (cross/floor) median 0.792, range 0.726 to 0.845; 35 of 35 rotate MORE than the safety direction (safety 0.845, cos_full 0.826)

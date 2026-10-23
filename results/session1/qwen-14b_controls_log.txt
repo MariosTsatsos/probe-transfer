@@ -1,0 +1,7 @@
+qwen-14b: layer 40
+   direction  n_pos  n_neg  assoc_with_safety  cos_full  cos_cross  ci_lo  ci_hi  floor  ratio  rotation
+      safety    200    250              1.000    0.8772     0.6332 0.5755 0.6723 0.7206 0.8788    0.0873
+question_how    178    272              0.228    0.8733     0.7651 0.7334 0.7881 0.8756 0.8738    0.1105
+named_entity    138    312              0.197    0.9059     0.7499 0.6950 0.7800 0.8252 0.9088    0.0753
+ length_long    217    233              0.085    0.8331     0.7173 0.6850 0.7391 0.8642 0.8300    0.1469
+type splits (n=35): agreement (cross/floor) median 0.912, range 0.892 to 0.922; 0 of 35 rotate MORE than the safety direction (safety 0.879, cos_full 0.877)

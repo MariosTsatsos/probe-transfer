@@ -1,0 +1,24 @@
+
+=== qwen-32b base (Qwen/Qwen2.5-32B), layer 43 ===
+safety_diffmeans     unsafe: ['晚', ' dispose', ' disposing', ' HAL', 'anka', ' Hal', 'prog', 'dis', '签', ' Berg', '天真', 'Anonymous', '公元', 'arda', '玩']
+                     safe:   ['釐', 'iola', '茧', 'chio', ' actionTypes', '栉', '廉政', 'oze', '投融资', ' bil', '的主要', ' Nass', 'peare', '畀', '�']
+safety_probe         unsafe: ['aine', '姑', '大巴', ' cola', 'uck', '.randrange', '刁', '共同体', 'colo', '论述', 'ry', '不远', '滋', '不应', '网络营销']
+                     safe:   [' Leban', 'Frames', 'tro', 'chap', ' Tubes', '�', '突', 'alu', ' ني', '/licenses', ' Lawyer', '毕', '大众', 'Logging', 'Tro']
+control_typesplit    unsafe: ['linger', '澄清', '咸', '衲', '巾', 'why', '不该', '国内市场', '就是因为', ' Tape', '饱', '以色', 'entials', '那么简单', '年第']
+                     safe:   ['exo', '未成年', 'bet', 'nesia', 'bourg', '水流', 'ória', 'yro', '�', ' Dum', 'NG', 'ouri', '.StartsWith', 'TEE', '\\Common']
+control_how          unsafe: ['不起', '_Rem', 'amba', '不出', '可以通过', 'числен', '签', ' stay', '我可以', ' effectively', 'ibern', 'Rem', ' Stay', '_rem', '_rom']
+                     safe:   ['粘', '赈', 'iske', '所所', '澄清', '圻', '随意', '筷', 'عين', '訂', 'dra', 'iri', '侬', '戴着', '葶']
+control_length       unsafe: ['乎', ' bil', ' ис', '冒', ' Leisure', '陶', 'mé', 'SOLE', '害', 'ipples', '_ste', ' helt', ' Marcel', '凝聚', ' stead']
+                     safe:   [' cont', ' con', 'slashes', 'acular', '五星', ' Dar', '憔', 'dar', 'SAFE', ' ne', ' adam', 'con', '久', 'Nom', ' cosm']
+
+=== qwen-32b arm (deepseek-ai/DeepSeek-R1-Distill-Qwen-32B), layer 43 ===
+safety_diffmeans     unsafe: [' HAL', '/stat', '欲', '(CharSequence', 'PageRoute', 'ำ', ' Hal', ' dispos', ' sağlam', '皖', '.or', 'อำ', 'svp', 'smith', 'Anonymous']
+                     safe:   ['idor', 'iola', '釐', ' ancest', 'anity', ' actionTypes', '廉政', 'iesen', ' bil', '态', 'IFIC', 'chio', '衍', '辐', '乱']
+safety_probe         unsafe: ['添', '调配', 'FM', 'WARE', 'ำ', ' cop', '踌', '恕', ' cola', '因为我', '苦难', ' Pale', 'EEEE', '涪', '欲']
+                     safe:   ['Stamp', 'ogg', ' ancestor', 'coef', 'rides', 'PEAR', ' Lawyer', 'cher', 'idor', 'steller', ' LIABILITY', 'Tro', ' Wilhelm', 'chap', 'Frames']
+control_typesplit    unsafe: ['的理由', '合理性', '流行', '不该', '澄清', '咸', 'why', ' why', ' men', '烤', '冰冷', '衲', '以色', 'linger', '鹇']
+                     safe:   ['未成年', 'ListOf', 'erald', 'yro', ' Overse', '_blk', 'poi', ' setC', 'exo', ' дух', 'bet', '.fig', 'ounsel', ' Dum', '敬']
+control_how          unsafe: ['amba', '不起', '脱', '_Rem', '敬', 'adoo', ' Stay', ' effectively', ' stay', 'tbl', 'stay', ' Conv', '_atom', '制', '共和']
+                     safe:   ['汐', '武装', '悭', '风吹', '.bd', 'ubi', 'iske', '圈', '每人', '所所', 'naire', '粘', ' Pant', '乱', '微观']
+control_length       unsafe: ['沿', ' ис', 'SOLE', '屠', '穿透', 'armed', '獾', '蕲', '/gl', 'uria', 'ipples', '以色', 'odyn', '伶', '看不到']
+                     safe:   [' cont', 'ky', ' ne', '情况下', ' swinging', 'con', ' con', '脱', '爵', '.mesh', '这名', ' mesh', ' sum', '_cont', 'sum']

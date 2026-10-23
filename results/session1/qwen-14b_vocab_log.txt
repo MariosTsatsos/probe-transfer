@@ -1,0 +1,24 @@
+
+=== qwen-14b base (Qwen/Qwen2.5-14B), layer 40 ===
+safety_diffmeans     unsafe: ['匿名', 'パパ活', '我的心', ' sex', '情侣', '避孕', 'sex', ' xnxx', '强奸', '表白', '男友', '相爱', '锉', 'rtle', ' anonymous']
+                     safe:   ['佐', 'acades', 'gba', ' nim', '试试', '隧', '사무', '怕', ' Nim', '咤', '叨', '蠹', 'laps', '�', 'nim']
+safety_probe         unsafe: ['匿名', '犯罪', 'RATE', '矿区', '.biz', ' Uhr', ' subtly', ' anonymous', ' dol', '.adv', '好吗', 'pill', '煙', ' circum', '��']
+                     safe:   ['疲劳', 'iller', '自发', '遂', '(force', '奄', '隧', ' interim', '_BREAK', '_dimension', '淦', ' Simpsons', '咤', 'vac', '맹']
+control_typesplit    unsafe: ['你还', 'naz', ' touched', '选举', 'same', '以色', '舟', ' touching', 'Naz', ' discrimin', ' primaries', 'vote', 'SAME', ' same', 'نان']
+                     safe:   [' şikayet', 'peria', '八字', '所有情节', '年龄段', '>Returns', '偷偷', '住址', '星座', '最快的', ' tecrübe', '游戏里的', '中毒', ' зарегист', 'BindingUtil']
+control_how          unsafe: [' myself', '我自己', 'without', '我不想', '我的心', '我可以', ' my', 'WITHOUT', ' мо', '在我的', '说我', '当我', '我又', '我家', '��']
+                     safe:   [' freely', 'RGBA', '让您', ' helicopt', '藏着', '陛', ' tatto', 'otype', 'ontology', 'apons', '给您', ' cử', 'Called', '上岗', ' submar']
+control_length       unsafe: [' discrim', '她们', '选举', '?key', '哉', '试验区', ' Leban', ' referendum', '罢了', ' thems', '_US', ' primaries', '部副', 'OffsetTable', ' CircularProgress']
+                     safe:   [' properly', ' formally', '正规', 'ohan', ' correctly', ' Naturally', '痞', ' Laf', ' safely', '知己', 'resolved', 'yne', 'prove', '陋', ' appropriately']
+
+=== qwen-14b arm (deepseek-ai/DeepSeek-R1-Distill-Qwen-14B), layer 40 ===
+safety_diffmeans     unsafe: ['匿名', ' anonymous', 'ابت', 'FileSync', '端正', ' Sext', '不出', '╱', 'パパ活', '锉', 'ayar', ' privacy', '_uploaded', 'itable', '�']
+                     safe:   ['gba', '빙', '丧失', '咤', ' Nim', 'โล', '竭', 'แตก', ' recru', 'Qed', 'acades', '랴', 'bes', '�', '怕']
+safety_probe         unsafe: ['amac', ' -*', ' Manson', '法律顾问', '毓', '一切都是', ' hor', 'Pagination', '公司章程', '슬', 'パパ活', '尔斯', ' Ire', '星座', 'habi']
+                     safe:   ['疲劳', '咤', '淦', 'PEND', '酚', 'oggles', 'apon', ' POSSIBILITY', 'plits', 'oras', '_abstract', ' exhaustion', '崖', 'โล', 'gba']
+control_typesplit    unsafe: ['你还', '修正', '舟', ' waves', '改正', ' mainstream', '主流', ' themselves', ' headlines', '以色', ' Poz', '곡', '选举', 'same', ' labels']
+                     safe:   [' şikayet', '八字', 'elic', '偷偷', '所有情节', '中毒', 'peria', '_MUT', '年龄段', '星座', '>Returns', 'elps', ' safely', '逗', 'odiac']
+control_how          unsafe: ['民心', 'without', ' properly', ' without', '求', '有效地', ' unwanted', 'WITHOUT', 'Without', '┤', '紀', '我的心', ' WITHOUT', '��', 'unde']
+                     safe:   [' freely', 'RGBA', '(vis', 'ilib', 'PLUGIN', ' cử', '@qq', 'linger', '랴', '匙', 'aci', '(aux', 'Called', '_checksum', '-main']
+control_length       unsafe: ['时不', ' наг', '涂', 'SOLE', 'قاد', '逻', 'osopher', 'لاح', 'iev', ' بنسبة', 'PackageManager', 'olib', ' bumper', '?key', 'linger']
+                     safe:   [' properly', 'deal', ' Sext', ' reliably', '的精神', "','=", ' meaning', 'prove', '江湖', ' Proper', 'ilos', 'чат', '巧妙', 'lox', ' Naturally']
