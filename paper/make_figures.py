@@ -1,4 +1,4 @@
-"""Figures for the paper. Reads numbers.json (built by gather.py from the result files). Writes fig/*.pdf."""
+"""Figures for draft v8. Reads numbers.json (built by gather.py from the result files). Writes fig/*.pdf."""
 import json, os
 import numpy as np
 import matplotlib
@@ -59,7 +59,7 @@ for f in FAM:
                    arrowprops=dict(arrowstyle="-", color=c, lw=0.5, shrinkA=0, shrinkB=3))
 b.axhline(0, color=DARK, lw=0.8)
 b.set_xlim(12, 41); b.set_ylim(-0.075, 0.075)
-b.set_xlabel("Rotation of the label direction (degrees)")
+b.set_xlabel("Rotation of the safety direction (degrees)")
 b.set_title("(b) Rotation versus change (XSTest)", loc="left")
 b.legend(handles=[plt.Line2D([], [], color=BLUE, marker="o", ls="", ms=4.5, label="distilled"),
                   plt.Line2D([], [], color=ORANGE, marker="s", ls="", ms=4.5, label="Instruct")],
@@ -134,7 +134,7 @@ for i, f in enumerate(FAM):
     c = D[f]["controls"]
     jit = rng.uniform(-0.12, 0.12, len(c["splits"]))
     ax.scatter(i + jit, c["splits"], s=9, color=GREY, alpha=0.8, label="35 prompt-type splits" if i == 0 else None, lw=0)
-    ax.scatter(i + 0.3, c["label"], s=40, color=BLUE, marker="D", label="XSTest label direction" if i == 0 else None, zorder=3)
+    ax.scatter(i + 0.3, c["label"], s=40, color=BLUE, marker="D", label="XSTest safety direction" if i == 0 else None, zorder=3)
     ax.scatter(i + 0.42, c["how"], s=22, color=ORANGE, marker="^", label="first word \"How\"" if i == 0 else None)
     ax.scatter(i + 0.18, c["named"], s=22, color="#55A868", marker="v", label="capitalised word" if i == 0 else None)
     ax.scatter(i + 0.3, c["length"], s=22, color=DARK, marker="x", label="longer than median" if i == 0 else None)

@@ -38,7 +38,7 @@ def clouds(d):
     return X[y == 0], X[y == 1]
 
 
-def panel(ax, d, title, note):
+def panel(ax, d, title, note, base_dir=None):
     safe, unsafe = clouds(d)
     ax.scatter(*safe.T, s=5, color=SAFE, alpha=0.55, lw=0, depthshade=False)
     ax.scatter(*unsafe.T, s=5, color=UNSAFE, alpha=0.55, lw=0, depthshade=False)
@@ -46,8 +46,17 @@ def panel(ax, d, title, note):
     yy, zz = np.meshgrid([-4, 4], [-2.2, 2.2])
     ax.plot_surface(np.zeros_like(yy), yy, zz, color=INK, alpha=0.10, edgecolor=INK, linewidth=0.8, linestyle="--")
     # direction arrow through the origin
-    ax.quiver(-1.8 * d[0], -1.8 * d[1], -1.8 * d[2], 3.6 * d[0], 3.6 * d[1], 3.6 * d[2],
-              color=INK, arrow_length_ratio=0.18, linewidth=1.8)
+    if base_dir is not None:
+        # the base model's direction, for reference, and the arc marking theta between the two
+        ax.quiver(-2.4 * base_dir[0], -2.4 * base_dir[1], -2.4 * base_dir[2], 4.8 * base_dir[0], 4.8 * base_dir[1], 4.8 * base_dir[2],
+                  color=GREY, arrow_length_ratio=0.12, linewidth=1.6)
+        ts = np.linspace(0, 1, 40)
+        arc = np.array([(1 - t) * base_dir + t * d for t in ts]); arc = 2.9 * arc / np.linalg.norm(arc, axis=1, keepdims=True)
+        ax.plot(arc[:, 0], arc[:, 1], arc[:, 2], color=BLUE, lw=1.6, zorder=10)
+        m = arc[len(arc) // 2] * 1.25
+        ax.text(m[0], m[1], m[2], r"$\theta$", color=BLUE, fontsize=11, weight="bold", zorder=11)
+    ax.quiver(-2.4 * d[0], -2.4 * d[1], -2.4 * d[2], 4.8 * d[0], 4.8 * d[1], 4.8 * d[2],
+              color=INK, arrow_length_ratio=0.12, linewidth=2.6)
     # sparse axis marker
     ax.plot([0, 0], [0, 0], [-2.4, 2.4], color=GREY, lw=0.8, ls=":")
     ax.set_xlim(-4, 4); ax.set_ylim(-4, 4); ax.set_zlim(-2.4, 2.4)
@@ -64,7 +73,7 @@ ax_a.text2D(0.12, 0.62, "safe", transform=ax_a.transAxes, color=SAFE, fontsize=7
 ax_a.text2D(0.74, 0.62, "unsafe", transform=ax_a.transAxes, color=UNSAFE, fontsize=7.5, weight="bold")
 
 d1 = rot(32, 72)   # 32 degrees away from the base direction, more than half of it into the sparse z axis
-panel(ax_b, d1, "(b) Successor, same probe", "direction rotated by $\\theta\\approx30^\\circ$,\npartly into the sparse direction;\nsame boundary, classes still split")
+panel(ax_b, d1, "(b) Successor, same probe", "safety direction rotated by $\\theta\\approx30^\\circ$\nfrom the base direction (grey),\npartly into the sparse direction;\nsame boundary, classes still split", base_dir=d0)
 
 # (c) measured
 y = np.arange(len(FAM))[::-1]
